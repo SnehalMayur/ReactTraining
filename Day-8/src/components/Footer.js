@@ -1,4 +1,5 @@
 import { Logo_URL } from "../utils/Constants";
+import { Link } from "react-router-dom";
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
@@ -13,10 +14,10 @@ const Footer = () => {
                 <div class="footer-col">
                     <h4>company</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">privacy policy</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About us</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="#">privacy policy</Link></li>
                     </ul>
                 </div>
                 <div class="footer-col">

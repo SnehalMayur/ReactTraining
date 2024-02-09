@@ -12,7 +12,7 @@
 }
 
 .logo{
-    width: 100px;
+    width: 50px;
     padding: 10px;
 }
 
@@ -23,10 +23,11 @@
     list-style: none;
 }
 
-.nav-items li{
+.nav-items li a{
     padding: 10px;
     margin: 10px;
     color:#fff;
+    text-decoration: none;
 }
 
 .search{
@@ -113,7 +114,12 @@
     text-decoration: none;
     display: inline-block;
 }
-  
+.filter input{
+    border: 1px solid #a7a6a4;
+    border-radius:10px 0px 0px 10px;
+    padding: 10px;
+    margin: 10px 0px 10px 0;
+}
 .container{
 	max-width: 1170px;
 	margin:auto;
