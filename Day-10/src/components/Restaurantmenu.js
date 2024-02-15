@@ -4,10 +4,10 @@ import Shimmer from "./Shimmer";
 import { useRestaurantData } from "../hooks/useRestaurantData";
 
 const RestaurantMenu = () => {
-const {resId}= useParams();
+const { resId }= useParams();
 const restaurantData = useRestaurantData(resId);
 
-console.log("restaurantData", restaurantData);
+//console.log("restaurantData", restaurantData);
 if (restaurantData === null) {
     return <Shimmer />;
   }
@@ -22,7 +22,7 @@ if (restaurantData === null) {
         <div className="P-30">
             <div>
                 <h2>{name}</h2>
-                <span>{cuisines}</span>
+                <span>{cuisines?.join(", ")}</span>
                 <p>{`${areaName} - ${sla?.deliveryTime}mins` }</p>
                 <p>{` ${avgRating} stars`}</p>
             </div>
